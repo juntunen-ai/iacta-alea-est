@@ -1,27 +1,28 @@
-# Iacta alea est — a scientific account of Caesar's agency
+# Iacta alea est
 
-A single-page, entirely static educational website. No JavaScript, cookies, forms, tracking, or interactive elements (other than ordinary source links). The page includes original SVG illustrations and diagrams.
+A long-form, illustrated scientific essay about Caesar crossing the Rubicon and the causal organization of human agency.
 
-## Publish on GitHub Pages
+**Published site:** https://juntunen-ai.github.io/iacta-alea-est/
 
-1. Create a public GitHub repository (for example, `rubicon-agency`).
-2. Upload `index.html` into the repository root.
-3. Open **Settings → Pages → Build and deployment**.
-4. Set **Source** to **Deploy from a branch**, choose **main** and **/(root)**, then save.
-5. Open the GitHub Pages URL shown in Settings once GitHub finishes deploying.
+## Files and publication
 
-For a user/organization site, the repository can instead be named `<username>.github.io`.
+- `index.html` contains the complete 14-section essay, introduction, and linked references.
+- `styles.css` provides responsive reading layouts and print styles.
+- `assets/` contains original static SVG illustrations. The medallion is retained from the first edition; the other plates were drawn for this redesign.
+- `content/original-essay.md` preserves the exact user-supplied source text, including its original citation placeholders, for editorial comparison.
 
-## Local preview
+GitHub Pages publishes `main` from the repository root. No build step or dependency installation is needed. Open `index.html` directly, or serve this folder with `python3 -m http.server 8000`.
 
-Open `index.html` in a browser. Optional: `python3 -m http.server 8000` in this folder, then visit `http://localhost:8000`.
+## Editorial treatment
 
-## Design and content
+All substantive prose and all 14 numbered sections of the supplied essay are retained. Formatting artifacts were converted to ordinary HTML. Chat citation placeholders became numbered links to the relevant bibliography entries. The evidence trajectories retain the supplied invented values and explicitly identify them as illustrative. Added illustrations and editorial notes do not claim direct access to Caesar's mental or neural states.
 
-- Responsive, parchment-and-oxblood editorial design with scientific teal diagram panels.
-- All diagrams are handcrafted SVG; no external image dependency.
-- Google Fonts are used when available; Georgia and system sans/monospace fonts are fallbacks.
-- Extensive footnoted source list, empirical/historical/interpretive distinctions, and accuracy note.
-- The title **Iacta alea est** follows the Latin word order reported by Suetonius. The familiar alternative **alea iacta est** is explained in the page.
+The 2024 representational-spaces review is correctly identified as appearing in *Trends in Neurosciences*. A scope note identifies the 2024 deliberation study as a visual-judgment experiment in macaques. Additional sources cover Plutarch's wording, Caesar's own account, and the experimental foundations of memory. The title follows Suetonius's Latin word order; the essay retains the familiar alternative.
 
-The site is intended for education and public discussion, not as a claim to direct historical brain measurements.
+## Accessibility and static behavior
+
+Semantic landmarks and headings, a keyboard skip link, visible focus, descriptive image alternatives, labelled data tables, and ordinary chapter/source anchors. Color is supplemented by labels, line styles and shapes. The chart has a distinct narrow-screen rendition and a complete HTML data table. Text remains available without JavaScript; no JavaScript, animations, external fonts, trackers, or remote image dependencies are included. Print styles preserve the essay and references.
+
+## Verification
+
+Checked in Chromium with JavaScript disabled at 1440, 768, 390 and 320 CSS pixels: no page overflow, broken internal anchors, duplicate IDs, missing images, or scripts. Source prose was compared with rendered text; substantive content was preserved. Desktop/mobile screenshots and print output were inspected during development. This is targeted verification, not a claim of formal accessibility certification.
