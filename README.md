@@ -8,7 +8,7 @@ A long-form, illustrated scientific essay about Caesar crossing the Rubicon and 
 
 - `index.html` contains the complete 14-section essay, introduction, and linked references.
 - `styles.css` provides responsive reading layouts and print styles.
-- `assets/` contains original static SVG illustrations. The medallion is retained from the first edition; the other plates were drawn for this redesign.
+- `assets/` contains original static SVG diagrams and a generated monumental hero illustration of Caesar and the legions facing symbolic Roma across the Rubicon. The earlier medallion remains as an unused retained asset.
 - `content/original-essay.md` preserves the exact user-supplied source text, including its original citation placeholders, for editorial comparison.
 
 GitHub Pages publishes `main` from the repository root. No build step or dependency installation is needed. Open `index.html` directly, or serve this folder with `python3 -m http.server 8000`.
